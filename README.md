@@ -1,75 +1,29 @@
-# Nuxt 3 Minimal Starter
+Nuxt Recipe App
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a modern, responsive recipe web application built with Nuxt 3 / Nuxt 4 File structure and TypeScript that helps users discover, view, and explore recipes easily. It integrates several key features and design principles:
 
-## Setup
+    Component-driven architecture: Reusable UI components like RecipeCard, BaseBtn, and BaseNavigation create a clean and maintainable codebase.
 
-Make sure to install the dependencies:
+    Dynamic routing: Recipes are accessed via dynamic routes ([id].vue) that fetch recipe details from an external API.
 
-```bash
-# npm
-npm install
+    Type safety: Uses TypeScript interfaces (types.ts) to define the shape of recipe data, improving code reliability.
 
-# pnpm
-pnpm install
+    SEO optimization: Pages set meaningful SEO and social metadata dynamically for better search engine ranking and social sharing previews.
 
-# yarn
-yarn install
+    Responsive design: The layout and components adapt seamlessly to different screen sizes for mobile and desktop.
 
-# bun
-bun install
-```
+    State-of-the-art image handling: Uses NuxtImg for optimized image loading and responsive sizes.
 
-## Development Server
+    Error handling: Custom error page to gracefully handle and show API or routing errors.
 
-Start the development server on `http://localhost:3000`:
+    Clean UI/UX: Includes navigation, call-to-action buttons, and user-friendly layouts designed with utility-first CSS (likely Tailwind).
 
-```bash
-# npm
-npm run dev
+Core pages include:
 
-# pnpm
-pnpm run dev
+    Home / Recipes listing: Showcases a hero banner and a grid of popular recipes.
 
-# yarn
-yarn dev
+    Recipe detail: Displays individual recipe info like ingredients, instructions, nutrition, and ratings.
 
-# bun
-bun run dev
-```
+    Error page: Friendly UI for error scenarios.
 
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Overall, the app provides a polished, user-friendly experience for exploring recipes and is built with scalable and maintainable Nuxt 3 best practices.
